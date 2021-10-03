@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.jar filter=lfs diff=lfs merge=lfs -text
+gateway/export/gateway.jar filter=lfs diff=lfs merge=lfs -text
+identity-provider/export/identity.jar filter=lfs diff=lfs merge=lfs -text
+eureka/export/eureka.jar filter=lfs diff=lfs merge=lfs -text

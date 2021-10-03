@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  eureka:
+    container_name: eureka
+    build: ./eureka
+    ports:
+      - 8761:8761
+  identity:
+    container_name: identity
+    build: ./identity-provider
+    ports:
+      - 8082:8082
+    depends_on:
+      - eureka
+  gateway:
+    container_name: gateway
+    build: ./gateway
+    ports:
+      - 8081:8081
+    depends_on:
+      - identity
+networks:
+    default:
+        external:
+            name: identity-net  
+  
+

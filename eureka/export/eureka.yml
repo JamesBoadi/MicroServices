@@ -1,0 +1,17 @@
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+spring:
+  application:
+    name: eureka
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://eureka:8761/eureka
+    instance:
+      preferIpAddress: true
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8761

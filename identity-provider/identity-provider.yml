@@ -1,0 +1,37 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: identity-provider	
+  security:
+    basic: 
+      enabled: true
+    user:
+      name: test
+      password: 1234
+  data:
+    mongodb:
+      uri: mongodb+srv://test:1234@cluster0.0noji.mongodb.net/Test?retryWrites=true&w=majority
+      database: Test
+      repositories:
+        enabled: true
+  main:
+    allow-bean-definition-overriding: true
+ribbon:
+  ReadTimeout: 60000  
+zuul:
+  routes:
+    identity:
+      path: /identity/**
+      service-id: identity-provider
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://localhost:8761/eureka
+    instance:
+      preferIpAddress: true
+
+
+  

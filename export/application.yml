@@ -1,0 +1,13 @@
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+spring:
+  application:
+    name: application
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://eureka:8761/eureka
+    instance:
+      preferIpAddress: true

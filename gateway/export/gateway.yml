@@ -1,0 +1,35 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: gateway
+  security:
+    basic: 
+      enabled: true
+    user:
+      name: test
+      password: 1234
+  data:
+    mongodb:
+      uri: mongodb+srv://test:1234@cluster0.0noji.mongodb.net/Test?retryWrites=true&w=majority
+      database: Test
+      repositories:
+        enabled: true
+  main:
+    allow-bean-definition-overriding: true
+ribbon:
+  ReadTimeout: 60000  
+zuul:
+  routes:
+    gateway:
+      path: /user/**
+      service-id: gateway
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://eureka:8761/eureka
+    instance:
+      preferIpAddress: true
+
