@@ -59,7 +59,7 @@ If you just want to run docker containers from a single image
 
 3. Change directory to export `cd export`
 
-	There are 3 jars, app.jar, gateway.jar and identity.jar
+	There are 3 jars, eureka.jar, gateway.jar and identity.jar
 
     * Use the OpenJDK 8 docker image (freely available at Docker hub) as a starting point. This image defines a minimal Linux system with OpenJDK 8 preinstalled.
 
@@ -84,7 +84,7 @@ If you just want to run docker containers from a single image
 2. Now run the first container. This runs up the Eureka registration server, which will allow the other microservices to find each other: 
 
     ```sh
-    docker run --name eureka --hostname eureka --network identity-net -p 8761:8761 microservices java -jar app.jar reg
+    docker run --name eureka --hostname eureka --network identity-net -p 8761:8761 microservices java -jar eureka.jar reg
     ```
 
     The `-d` (detach) flag is missing so all output will stream to the console so we can see what is happening.
