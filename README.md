@@ -27,7 +27,7 @@ Microservices: eureka, gateway, identity-provider
 
 This will build 3 images
 
-1. Open a terminal from the root directory and enter `docker compose up -d`.
+1. Open a terminal from the root directory and enter `docker-compose up -d`.
 
 2. Go to the directory of the Angular app `cd client` and run the app: `npm start`.
 
