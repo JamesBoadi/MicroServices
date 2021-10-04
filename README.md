@@ -23,7 +23,9 @@ Microservices: eureka, gateway, identity-provider
 1. Run the servers from the directory `cd export` use the command `java -jar {jar goes here}` run all three jars (eureka.jar, gateway.jar, identity.jar)
 2. Move to the directory of the Angular app `cd client` and run the app: `npm start`.
 
-## Run using docker
+## Run using docker compose
+
+This will build 3 images
 
 1. Open a terminal from the root directory and enter `docker compose up -d`.
 
