@@ -1,0 +1,23 @@
+<div class="container flex flex-col items-center justify-center">
+    <div class="form">
+      <p class="register-text">Registration</p>
+
+      <p class="first_name_text">First Name</p>
+      <input type="text" class="first_name" id="first_name" name="first_name" #first_name>
+      <p class="surname_text">Surname</p>
+      <input type="text" class="surname" id="surname" name="surname" #surname>
+      <p class="user_name_text">Username</p>
+      <input type="text" class="user_name" id="user_name" name="user_name" #user_name>
+      <p class="email_text">Email</p>
+      <input type="text" class="email" id="email" name="email" #email>
+      <p class="password_text">Password</p>
+      <input type="text" class="password" id="password" name="password" #password> 
+      
+      <button
+        class="register"
+        (click)="onCreateAccount(first_name.value, surname.value, user_name.value, email.value, password.value)"
+        >
+        Register
+      </button>
+    </div>
+  </div>

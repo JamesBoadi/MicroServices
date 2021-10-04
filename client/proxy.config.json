@@ -1,0 +1,11 @@
+[
+  {
+      "context": [
+        "/user",
+        "/identity"
+      ],
+      "target": "http://localhost:8761",
+      "secure": false,
+      "logLevel": "debug"
+  }
+]

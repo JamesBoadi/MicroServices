@@ -1,0 +1,221 @@
+//  h-12 px-6 py-3 font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500 focus:ring-4 focus:ring-offset-blue-600 focus:outline-none
+$white: #e6e5e7;
+$grey: rgb(216, 204, 204);
+$red: rgb(245, 100, 100);
+$black: rgb(2, 2, 2);
+
+ .form{
+    position: absolute;
+    top: 20%;
+    width: 20rem;
+    height: 28rem;
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: 0;
+    background: $white;
+  }
+  
+/* First Name Title */
+  
+  .first_name{
+    position: relative;
+    top: 40px;
+    right: -13px;
+    width: 18rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .first_name_text{
+    position: relative;
+    top: 38px;
+    right: -13px;
+    color: black;
+  }
+
+/* ********************************** */
+
+/* Surname Title */
+ 
+  .surname{
+    position: relative;
+    top: 60px;
+    right: -13px;
+    width: 18rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .surname_text{
+    position: relative;
+    top: 58px;
+    right: -13px;
+    color: black;
+  }
+
+/* ********************************** */
+
+/* Username Title */
+  
+  .user_name{
+    position: relative;
+    top: 80px;
+    right: -13px;
+    width: 18rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .user_name_text{
+    position: relative;
+    top: 78px;
+    right: -13px;
+    color: black;
+  }
+
+/* ********************************** */
+
+/* Email Title */
+  
+  .email{
+    position: relative;
+    top: 100px;
+    right: -13px;
+    width: 18rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .email_text{
+    position: relative;
+    top: 98px;
+    right: -13px;
+    color: black;
+  }
+
+/* ********************************** */
+
+/* Email Title */
+  
+  .password{
+    position: relative;
+    top: 120px;
+    right: -13px;
+    width: 18rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .password_text{
+    position: relative;
+    top: 118px;
+    right: -13px;
+    color: black;
+  }
+
+/* ********************************** */
+
+.register{
+  position: relative;
+  top: 140px;
+  right: -13px;
+  width: 18rem;
+  border-radius: 8px;
+  font-weight: 5px;
+  color: $black;
+  background: $grey;
+}
+
+.register-text{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  color: black;
+}
+
+/*
+  @media screen and (max-width: 576px) { 
+    .form{
+      position: absolute;
+      top: 25%;
+      width: 18rem;
+      height: 20rem;
+      border-radius: 10px;
+      z-index: 1;
+      margin-top: 0;
+      background: $white;
+    }
+
+  .email
+  {
+    position: relative;
+    top: 40px;
+    right: -13px;
+    width: 16rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .password
+  {
+    position: relative;
+    top: 60px;
+    right: -13px;
+    width: 16rem;
+    font-weight: 5px;
+    color: $black;
+    background: rgb(253, 253, 253);
+  }
+
+  .sign-in{
+    position: relative;
+    top: 100px;
+    right: -13px;
+    width: 16rem;
+    border-radius: 8px;
+    font-weight: 5px;
+    color: $black;
+    background: $grey;
+  }
+
+  .create-account{
+    position: relative;
+    top: 120px;
+    right: -13px;
+    width: 16rem;
+    border-radius: 8px;
+    font-weight: 5px;
+    color: $black;
+    background: $grey;
+  }
+
+  
+  .forgot-password-text{
+    position: relative;
+    top: 130px;
+    right: -13px;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+  }
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+

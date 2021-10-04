@@ -1,0 +1,16 @@
+<div class="container flex flex-col items-center justify-center">
+  <div class="form">
+    <p class="sign-in-text">Sign In</p>
+    <p class="email_text">Email</p>
+    <input type="text" class="email" id="email" name="email" #email>
+    <p class="password_text">Password</p>
+    <input type="text" class="password" id="password" name="password" #password>
+    <button class="sign-in" (click)="onClickSignIn(email.value, password.value)">
+      Sign in
+    </button>
+    <button class="create-account" [routerLink]="['/', path.auth.root, path.auth.registration]">
+      Create Account
+    </button>
+    <p class="forgot-password-text" [routerLink]="['/', path.auth.root, path.auth.forgotPassword]">Forgot Password?</p>
+  </div>
+</div>
