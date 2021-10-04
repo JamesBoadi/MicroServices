@@ -13,14 +13,21 @@
 1. Clone this repo using `git clone https://github.com/JamesBoadi/Microservices.git`
 2. Move to the appropriate directory: `cd client`
 3. Install dependencies: `npm install`
-4. Run the servers from the directory `cd export` use the command `java -jar {jar goes here}` run all three jars (app.jar, gateway.jar, identity.jar)
-5. Move to the directory of the Angular app `cd client` and run the app: `npm start`
 
-## Run
+## Run using terminal
 
-1. Each Microservice needs to be run seperately, first, start the eureka server by running Application.java 
-then run each microservice (GatewayServer.Java, IdentityProviderServer.Java). Each microservice has a main class, 
-so you can run each one from there.
+Open 3 terminals, one for each microservice from folder `{name}/export` 
+
+Microservices: eureka, gateway, identity-provider
+
+1. Run the servers from the directory `cd export` use the command `java -jar {jar goes here}` run all three jars (eureka.jar, gateway.jar, identity.jar)
+2. Move to the directory of the Angular app `cd client` and run the app: `npm start`.
+
+## Run using docker
+
+1. Open a terminal from the root directory and enter `docker compose up -d`.
+
+2. Go to the directory of the Angular app `cd client` and run the app: `npm start`.
 
 ## Configuration
 
