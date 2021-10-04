@@ -31,10 +31,9 @@ Microservices: eureka, gateway, identity-provider
 
 ## Configuration
 
-You can configure the database through the `.properties` file, for each microservice you can configure it to any database you like
+You can configure the database through the `.yml` file, for each microservice you can configure it to any database you like
 
-To generate a jar you must create a runnable jar, from Eclipse, go to file -> export, launch configuration should be the main class 
-you want to export, and click the last option `copy required files into subfolder next to generated Jar` and run the operation.
+To generate a jar you must create a runnable jar, from Eclipse, go to file -> export, launch configuration should be the main class you want to export, and click the last option `copy required files into subfolder next to generated Jar` and run the operation.
 
 The project is already configured as a multi module maven project, to rebuild, run `mvmw clean install` from the root of the project.
 
@@ -48,9 +47,9 @@ You may also need to configure the proxy so that the client side can communicate
 localhost: `http://localhost:8761`
 docker: `http://eureka:8761`
 
-## Docker
+## Run Docker from a single image
 
-## Build the Image
+If you just want to run docker containers from a single image
 
 1. Fetch the code using git clone `https://github.com/JamesBoadi/MicroServices.git`
 
@@ -73,13 +72,7 @@ docker: `http://eureka:8761`
     ```sh
     docker images
     ```
-
-## Running the Application
-
-We will run the container three times, each time running the Java application in a different mode.
-
-![Example Microservices System](mini-system.jpg)
-
+    
 1. They need to talk to each other, so let's give them a network:
 
     ```sh
